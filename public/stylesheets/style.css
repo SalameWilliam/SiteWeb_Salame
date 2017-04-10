@@ -1,0 +1,94 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+}
+div {
+    padding: 0;
+    margin: 0;
+}
+.upperTopDiv {
+    height: 8%;
+    background-color: deepskyblue;
+}
+
+.whiteSpace {
+    background-color: white;
+    height: 10%;
+}
+
+.textSpace {
+    background-color: white;
+    height: 31%;
+}
+.leftContent {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url("/../images/house.jpeg");
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+.rightContent {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: #f6f6f6;
+}
+.text {
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-left: 4%;
+    display: table;
+}
+.title {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 0s;
+    -o-animation-duration: 2s;
+    -o-animation-delay: 0s;
+}
+.firstPhrase,.secondPhrase,.thirdPhrase {
+    width: 100%;
+}
+.firstPhrase {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-duration: 2s;
+    -o-animation-delay: 0.2s;
+}
+.secondPhrase {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-duration: 2s;
+    -o-animation-delay: 0.4s;
+}
+.thirdPhrase {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-duration: 2s;
+    -o-animation-delay: 0.6s;
+}
+span {
+    display:inline-block;
+}
+.container {
+    display: table-cell;
+    vertical-align: middle;
+    horiz-align: left;
+}
+
+
