@@ -25,6 +25,7 @@ div {
 .textSpace {
     background-color: white;
     height: 31%;
+    position: absolute;
 }
 .leftContent {
     width: 50%;
@@ -89,6 +90,21 @@ span {
     display: table-cell;
     vertical-align: middle;
     horiz-align: left;
+}
+.first {
+    width: 100%;
+    left: 0;
+}
+.second {
+    width: 100%;
+    left: 100%;
+}
+.third {
+    width: 100%;
+    left: 200%;
+}
+.under {
+    top: 59%;
 }
 
 
