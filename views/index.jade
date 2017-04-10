@@ -5,13 +5,28 @@ html
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
         link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Raleway')
+        script(src="/javascripts/jQuery.js")
+        script(src="/javascripts/home.js")
     body
         div.upperTopDiv
+            div.Name
             div.mainMenu
+                div.menuCenter
+                    div.leftMenu
+                        span.vertical
+                            |Accueil
+                    div.midMenu
+                        span.vertical
+                            |A savoir
+                    div.rightMenu
+                        span.vertical
+                            |Contact
+
         div.whiteSpace
         //- This is the first part showed when entered the site
         div.textSpace.first
             div.leftContent
+                div.leftPhoto.animated.fadeIn#firstPhoto
             div.rightContent
                 div.text
                     div.container
@@ -69,59 +84,59 @@ html
         div.whiteSpace
         //- This is the first part showed when entered the site
         div.textSpace.first.under
-            div.leftContent
             div.rightContent
-                div.text
+            div.leftContent.rightText
+                div.text2
                     div.container
-                        h1.title.animated.fadeInRight Accueil
+                        h1.title.animated.fadeInLeft Accueil
                         p.paragraph
-                            div.firstPhrase.animated.fadeInRight
+                            div.firstPhrase.animated.fadeInLeft
                                 span
                                     | Le secretariat est ouvert de 8h30 a 18h
                             br
-                            div.secondPhrase.animated.fadeInRight
+                            div.secondPhrase.animated.fadeInLeft
                                 span
                                     | Veuilliez venir accompagner pour une colonospcopie
                             br
-                            div.thirdPhrase.animated.fadeInRight
+                            div.thirdPhrase.animated.fadeInLeft
                                 span
                                     | J'aime manger des fraises
         //- Second part
         div.textSpace.second.under
-            div.leftContent
             div.rightContent
-                div.text
+            div.leftContent.rightText
+                div.text2
                     div.container
-                        h1.title.animated.fadeInRight Accueil
+                        h1.title.animated.fadeInLeft Accueil
                         p.paragraph
-                            div.firstPhrase.animated.fadeInRight
+                            div.firstPhrase.animated.fadeInLeft
                                 span
                                     | Le secretariat est ouvert de 8h30 a 18h
                             br
-                            div.secondPhrase.animated.fadeInRight
+                            div.secondPhrase.animated.fadeInLeft
                                 span
                                     | Veuilliez venir accompagner pour une colonospcopie
                             br
-                            div.thirdPhrase.animated.fadeInRight
+                            div.thirdPhrase.animated.fadeInLeft
                                 span
                                     | J'aime manger des fraises
         //- Third part
         div.textSpace.third.under
-            div.leftContent
             div.rightContent
-                div.text
+            div.leftContent.rightText
+                div.text2
                     div.container
-                        h1.title.animated.fadeInRight Accueil
+                        h1.title.animated.fadeInLeft Accueil
                         p.paragraph
-                            div.firstPhrase.animated.fadeInRight
+                            div.firstPhrase.animated.fadeInLeft
                                 span
                                     | Le secretariat est ouvert de 8h30 a 18h
                             br
-                            div.secondPhrase.animated.fadeInRight
+                            div.secondPhrase.animated.fadeInLeft
                                 span
                                     | Veuilliez venir accompagner pour une colonospcopie
                             br
-                            div.thirdPhrase.animated.fadeInRight
+                            div.thirdPhrase.animated.fadeInLeft
                                 span
                                     | J'aime manger des fraises
         div.whiteSpace
