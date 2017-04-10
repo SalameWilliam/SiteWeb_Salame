@@ -1,13 +1,3 @@
-@media (min-width:900px) {
-    .menuCenter {
-        width: 600px;
-    }
-}
-@media (max-width:899px) {
-    .menuCenter {
-        width: 200px;
-    }
-}
 html,
 body {
     height: 100%;
@@ -18,6 +8,12 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 21px;
 }
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
 .Name {
     width:100%;
     height:65%;
@@ -26,10 +22,13 @@ body {
     width:100%;
     height:35%;
     background-color: cornflowerblue;
+    min-width:600px;
 }
 .menuCenter {
     height: 100%;
     margin:0 auto;
+    min-width: 600px;
+    width: 600px;
 }
 .leftMenu,.midMenu,.rightMenu {
     height: 100%;
@@ -69,10 +68,12 @@ div {
     position: relative;
     z-index: 10;
     height: 8%;
+    min-height:80px;
     background-color: deepskyblue;
     -webkit-box-shadow: 0 0 16px 1px rgba(0,0,0,0.32);
     -moz-box-shadow: 0 0 16px 1px rgba(0,0,0,0.32);
     box-shadow: 0 0 16px 1px rgba(0,0,0,0.32);
+    min-width: 1200px;
 }
 #firstPhoto {
     background-image: url("/../images/house.jpeg");
@@ -83,6 +84,8 @@ div {
 .whiteSpace {
     background-color: white;
     height: 10%;
+    min-height:10%;
+    min-width: 1200px;
 }
 .containerAbs {
     position: relative;
@@ -92,8 +95,10 @@ div {
 .textSpace {
     background-color: white;
     height: 31%;
+    min-height:31%;
     position: absolute;
     z-index: 10;
+    min-width: 1200px;
 }
 .leftContent {
     width: 50%;
