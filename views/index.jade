@@ -5,7 +5,10 @@ html
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
         link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Raleway')
+        script(src="http://maps.google.com/maps/api/js?sensor=true")
         script(src="/javascripts/jQuery.js")
+        script(src="/javascripts/jquery.bez.js")
+        script(src="/javascripts/gmaps.js")
         script(src="/javascripts/home.js")
     body
         div.upperTopDiv
@@ -21,122 +24,85 @@ html
                     div.rightMenu
                         span.vertical
                             |Contact
-
-        div.whiteSpace
-        //- This is the first part showed when entered the site
-        div.textSpace.first
-            div.leftContent
-                div.leftPhoto.animated.fadeIn#firstPhoto
-            div.rightContent
-                div.text
-                    div.container
-                        h1.title.animated.fadeInRight Accueil
-                        p.paragraph
-                            div.firstPhrase.animated.fadeInRight
-                                span
-                                    |Le secretariat est ouvert de 8h30 a 18h
-                            br
-                            div.secondPhrase.animated.fadeInRight
-                                span
-                                    |Veuilliez venir accompagner pour une colonospcopie
-                            br
-                            div.thirdPhrase.animated.fadeInRight
-                                span
-                                    |J'aime manger des fraises
-        //- This is the second middle part
-        div.textSpace.second
-            div.leftContent
-            div.rightContent
-                div.text
-                    div.container
-                        h1.title.animated.fadeInRight Accueil
-                        p.paragraph
-                            div.firstPhrase.animated.fadeInRight
-                                span
-                                    | Le secretariat est ouvert de 8h30 a 18h
-                            br
-                            div.secondPhrase.animated.fadeInRight
-                                span
-                                    | Veuilliez venir accompagner pour une colonospcopie
-                            br
-                            div.thirdPhrase.animated.fadeInRight
-                                span
-                                    | J'aime manger des fraises
-        //- This is the third right part
-        div.textSpace.third
-            div.leftContent
-            div.rightContent
-                div.text
-                    div.container
-                        h1.title.animated.fadeInRight Accueil
-                        p.paragraph
-                            div.firstPhrase.animated.fadeInRight
-                                span
-                                    | Le secretariat est ouvert de 8h30 a 18h
-                            br
-                            div.secondPhrase.animated.fadeInRight
-                                span
-                                    | Veuilliez venir accompagner pour une colonospcopie
-                            br
-                            div.thirdPhrase.animated.fadeInRight
-                                span
-                                    | J'aime manger des fraises
-        div.whiteSpace
-        //- This is the first part showed when entered the site
-        div.textSpace.first.under
-            div.rightContent
-            div.leftContent.rightText
-                div.text2
-                    div.container
-                        h1.title.animated.fadeInLeft Accueil
-                        p.paragraph
-                            div.firstPhrase.animated.fadeInLeft
-                                span
-                                    | Le secretariat est ouvert de 8h30 a 18h
-                            br
-                            div.secondPhrase.animated.fadeInLeft
-                                span
-                                    | Veuilliez venir accompagner pour une colonospcopie
-                            br
-                            div.thirdPhrase.animated.fadeInLeft
-                                span
-                                    | J'aime manger des fraises
-        //- Second part
-        div.textSpace.second.under
-            div.rightContent
-            div.leftContent.rightText
-                div.text2
-                    div.container
-                        h1.title.animated.fadeInLeft Accueil
-                        p.paragraph
-                            div.firstPhrase.animated.fadeInLeft
-                                span
-                                    | Le secretariat est ouvert de 8h30 a 18h
-                            br
-                            div.secondPhrase.animated.fadeInLeft
-                                span
-                                    | Veuilliez venir accompagner pour une colonospcopie
-                            br
-                            div.thirdPhrase.animated.fadeInLeft
-                                span
-                                    | J'aime manger des fraises
-        //- Third part
-        div.textSpace.third.under
-            div.rightContent
-            div.leftContent.rightText
-                div.text2
-                    div.container
-                        h1.title.animated.fadeInLeft Accueil
-                        p.paragraph
-                            div.firstPhrase.animated.fadeInLeft
-                                span
-                                    | Le secretariat est ouvert de 8h30 a 18h
-                            br
-                            div.secondPhrase.animated.fadeInLeft
-                                span
-                                    | Veuilliez venir accompagner pour une colonospcopie
-                            br
-                            div.thirdPhrase.animated.fadeInLeft
-                                span
-                                    | J'aime manger des fraises
-        div.whiteSpace
+        div.data
+            div.whiteSpace
+            //- This is the first part showed when entered the site
+            div.textSpace.first.top
+                div.leftContent
+                    div.Photo.right.animated.fadeIn#firstPhoto
+                div.rightContent
+                    div.text
+                        div.container
+                            h1.title.animated.fadeInRight Accueil
+                            p.paragraph
+                                div.firstPhrase.animated.fadeInRight
+                                    span
+                                        |Le secretariat est ouvert de 8h30 a 18h
+                                br
+                                div.secondPhrase.animated.fadeInRight
+                                    span
+                                        |Veuilliez venir accompagner pour une colonospcopie
+                                br
+                                div.thirdPhrase.animated.fadeInRight
+                                    span
+                                        |J'aime manger des fraises
+            //- This is the second middle part
+            div.textSpace.second.top
+                div.leftContent
+                div.rightContent
+                    div.text
+                        div.container
+                            h1.title.animated.fadeInRight Accueil
+                            p.paragraph
+                                div.firstPhrase.animated.fadeInRight
+                                    span
+                                        | Le secretariat est ouvert de 8h30 a 18h
+                                br
+                                div.secondPhrase.animated.fadeInRight
+                                    span
+                                        | Veuilliez venir accompagner pour une colonospcopie
+                                br
+                                div.thirdPhrase.animated.fadeInRight
+                                    span
+                                        | J'aime manger des fraises
+            //- This is the third right part
+            div.textSpace.third.top
+                div.leftContent
+                div.rightContent
+                    div.text
+                        div.container
+                            h1.title.animated.fadeInRight Accueil
+                            p.paragraph
+                                div.firstPhrase.animated.fadeInRight
+                                    span
+                                        | Le secretariat est ouvert de 8h30 a 18h
+                                br
+                                div.secondPhrase.animated.fadeInRight
+                                    span
+                                        | Veuilliez venir accompagner pour une colonospcopie
+                                br
+                                div.thirdPhrase.animated.fadeInRight
+                                    span
+                                        | J'aime manger des fraises
+            div.whiteSpace
+            //- This is the first part showed when entered the site
+            div.textSpace.first
+                div.rightContent
+                    div.left.Photo.animated.fadeIn#gmap
+                div.leftContent.rightText
+                    div.text2
+                        div.container
+                            h1.title.animated.fadeInLeft Plan
+                            p.paragraph
+                                div.firstPhrase.animated.fadeInLeft
+                                    span
+                                        | Le secretariat est ouvert de 8h30 a 18h
+                                br
+                                div.secondPhrase.animated.fadeInLeft
+                                    span
+                                        | Veuilliez venir accompagner pour une colonospcopie
+                                br
+                                div.thirdPhrase.animated.fadeInLeft
+                                    span
+                                        | J'aime manger des fraises
+            div.whiteSpace
