@@ -71,15 +71,16 @@ div {
     transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); /* custom */
 }
 .upperTopDiv {
-    position: relative;
     z-index: 10;
     height: 8%;
+    width: 100%;
     min-height:80px;
     background-color: deepskyblue;
     -webkit-box-shadow: 0 0 16px 1px rgba(0,0,0,0.32);
     -moz-box-shadow: 0 0 16px 1px rgba(0,0,0,0.32);
     box-shadow: 0 0 16px 1px rgba(0,0,0,0.32);
     min-width: 1200px;
+    position: fixed;
 }
 .data {
     height:100%;
